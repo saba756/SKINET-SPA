@@ -26,6 +26,7 @@ sortOptions =[
   this.getProducts();
   this.getBrands();
   this.getTypes();
+  console.log("hey")
   }
   getProducts(){
     this.shopService.getProducts(this.shopParams).subscribe(response =>{
