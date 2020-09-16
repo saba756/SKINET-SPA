@@ -26,6 +26,7 @@ pipe(
 }
 
 setBasket(basket: IBasket){
+  console.log(basket)
   return this.http.post(this.baseUrl + 'basket' , basket).subscribe((response: IBasket) => {
     this.basketSource.next(response);
     this.calculateTotals();
